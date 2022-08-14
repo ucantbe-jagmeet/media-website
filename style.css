@@ -77,7 +77,7 @@
     margin-right: 6%;
     margin-top: 120px;
     display: flex;
-   
+    align-items: center;
 }
 
 .right-col p
