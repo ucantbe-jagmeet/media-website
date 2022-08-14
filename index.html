@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Media site</title>
+</head>
+<body>
+        <div class="container">
+
+            <div class="navbar">
+                <img class="logo" src="./img/logo.png" alt="">
+                <ul>
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Specifications</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Connect</a></li>
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="left-col">
+                    <h1>The<br>Real<br>Sound</h1>
+                </div>
+                <div class="right-col">
+                    <p>Click here to listen</p>
+                    <img id="icon" src="./img/play.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <audio id="mySong" src="./img/01   Yo Yo Honey Singh   Brown Rang.mp3" type="audio/mp3" ></audio>
+
+        <script>
+            var mySong=document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function()
+            {
+               if(mySong.paused)
+                    {
+                        mySong.play();
+                        icon.src="./img/pause.png";
+                    }
+                else
+                    {
+                        mySong.pause();
+                        icon.src="./img/play.png";
+                    }
+            }
+
+        </script>
+</body>
+</html>
